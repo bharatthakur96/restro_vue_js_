@@ -1,20 +1,20 @@
 {
-  "user": [
+  "users": [
     {
-      "name": "Shubham Yadav",
-      "email": "sy@gmail.com",
+      "name": "Shhubham Yadav ",
+      "email": "sy@email.com",
       "password": "12345",
       "id": 1
     },
     {
-      "name": "Virendra Singh",
-      "email": "v@gmail.com",
+      "name": "Mohit Sir",
+      "email": "m@email.com",
       "password": "12345",
       "id": 2
     },
     {
-      "name": "Mohit Sir",
-      "email": "m@gmail.com",
+      "name": "Virendra",
+      "email": "v@email.com",
       "password": "12345",
       "id": 3
     }
