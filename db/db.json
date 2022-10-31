@@ -35,6 +35,12 @@
       "email": "m@email.com",
       "password": "12345",
       "id": 6
+    },
+    {
+      "name": "Mohit Sir",
+      "email": "m@gmail.com",
+      "password": "12345",
+      "id": 7
     }
   ]
 }
