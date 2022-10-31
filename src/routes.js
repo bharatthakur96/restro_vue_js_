@@ -5,24 +5,24 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
     {
-        name:'HomePage',
-        component:HomePage,
-        path:'/'
+        name: 'HomePage',
+        component: HomePage,
+        path: '/'
     },
     {
-        name:'SignUp',
-        component:SignUp,
-        path:'/sign-up'
+        name: 'SignUp',
+        component: SignUp,
+        path: '/sign-up'
     },
     {
-        name:'LoginPage',
-        component:LoginPage,
-        path:'/login'
+        name: 'LoginPage',
+        component: LoginPage,
+        path: '/login'
     },
 ]
 
-const router=createRouter({
-    history:createWebHistory(),
+const router = createRouter({
+    history: createWebHistory(),
     routes
 })
 

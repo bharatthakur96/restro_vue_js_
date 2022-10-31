@@ -5,6 +5,7 @@
     <input type="password" v-model="password" placeholder="Enter Password" />
     <button v-on:click="login">Login</button>
     <p>
+      You Don't have an account?
       <router-link to="/sign-up">Sign Up</router-link>
     </p>
   </div>
@@ -31,35 +32,32 @@ export default {
       }
     },
   },
-  mounted()
-    {
-        let user = localStorage.getItem("user-info");
-        if(user)
-        {
-            this.$router.push({name:'HomePage'})
-        }
+  mounted() {
+    let user = localStorage.getItem("user-info");
+    if (user) {
+      this.$router.push({ name: "HomePage" });
     }
+  },
 };
 </script>
 
 <style>
-.login input{
-    width: 300px;
-    height: 40px;
-    padding-left: 20px;
-    display: block;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid skyblue;
+.login input {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid skyblue;
 }
-.login button{
-    width: 320px;
-    height: 40px;
-    border: 1px solid skyblue;
-    color: #fff;
-    background-color:skyblue ;
-    cursor: pointer;
+.login button {
+  width: 320px;
+  height: 40px;
+  border: 1px solid skyblue;
+  color: #fff;
+  background-color: skyblue;
+  cursor: pointer;
 }
-
 </style>

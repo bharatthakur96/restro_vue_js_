@@ -1,40 +1,40 @@
 {
-  "users": [
-    {
-      "name": "Shhubham Yadav ",
-      "email": "sy@email.com",
-      "password": "12345",
-      "id": 1
-    },
-    {
-      "name": "Mohit Sir",
-      "email": "m@email.com",
-      "password": "12345",
-      "id": 2
-    },
-    {
-      "name": "Virendra",
-      "email": "v@email.com",
-      "password": "12345",
-      "id": 3
-    },
-    {
-      "name": "rajat sharma",
-      "email": "r@email.com",
-      "password": "12345",
-      "id": 4
-    },
-    {
-      "name": "aman sir",
-      "email": "a@email.com",
-      "password": "12345",
-      "id": 5
-    },
-    {
-      "name": "muskan ",
-      "email": "m@email.com",
-      "password": "12345",
-      "id": 6
-    }
-  ]
+    "users": [
+        {
+            "name": "Shhubham Yadav ",
+            "email": "sy@email.com",
+            "password": "12345",
+            "id": 1
+        },
+        {
+            "name": "Mohit Sir",
+            "email": "m@email.com",
+            "password": "12345",
+            "id": 2
+        },
+        {
+            "name": "Virendra",
+            "email": "v@email.com",
+            "password": "12345",
+            "id": 3
+        },
+        {
+            "name": "rajat sharma",
+            "email": "r@email.com",
+            "password": "12345",
+            "id": 4
+        },
+        {
+            "name": "aman sir",
+            "email": "a@email.com",
+            "password": "12345",
+            "id": 5
+        },
+        {
+            "name": "muskan ",
+            "email": "m@email.com",
+            "password": "12345",
+            "id": 6
+        }
+    ]
 }
