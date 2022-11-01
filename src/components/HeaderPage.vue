@@ -2,7 +2,6 @@
   <div class="nav">
     <router-link to="/">Home</router-link>
     <router-link to="/add-restro">Add Restro</router-link>
-    <router-link to="/update-restro">Update Restro</router-link>
     <a style="float: right" v-on:click="logout">Logout</a>
   </div>
 </template>

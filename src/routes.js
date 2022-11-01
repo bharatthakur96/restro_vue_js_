@@ -9,27 +9,27 @@ const routes = [
     {
         name: 'HomePage',
         component: HomePage,
-        path: '/'
+        path: '/',
     },
     {
         name: 'SignUp',
         component: SignUp,
-        path: '/sign-up'
+        path: '/sign-up',
     },
     {
         name: 'LoginPage',
         component: LoginPage,
-        path: '/login'
+        path: '/login',
     },
     {
         name: 'AddRestro',
         component: AddRestro,
-        path: '/add-restro'
+        path: '/add-restro',
     },
     {
         name: 'UpdateRestro',
         component: UpdateRestro,
-        path: '/update-restro'
+        path: '/update-restro/:id',
     },
 ]
 

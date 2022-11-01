@@ -8,12 +8,14 @@
         <th>Name</th>
         <th>Address</th>
         <th>Contact</th>
+        <th>Action</th>
       </tr>
       <tr v-for="item in restaurants" :key="item.id">
         <td>{{ item.id }}</td>
         <td>{{ item.name }}</td>
         <td>{{ item.address }}</td>
         <td>{{ item.contact }}</td>
+        <td><router-link :to="'/update-restro/' + item.id">Update</router-link></td>
       </tr>
     </table>
   </div>
