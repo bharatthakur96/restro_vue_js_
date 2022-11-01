@@ -1,6 +1,6 @@
 <template>
   <header-page />
-  <h1>Hello {{ name }}</h1>
+  <h1>Hello, {{ name }}</h1>
   <div class="restro">
     <table>
       <tr>
@@ -52,9 +52,9 @@ export default {
 }
 
 table {
-    width:70%; 
-    padding: 10px;
-    border-spacing: 7px;
+  width: 75%;
+  padding: 10px;
+  border-spacing: 5px;
 }
 
 td {
