@@ -1,6 +1,6 @@
 <template>
   <header-page />
-  <h1>Hello, {{ name }}</h1>
+  <!-- <h1>Hello, {{ name }}</h1> -->
   <div class="restro">
     <table>
       <tr>
@@ -15,7 +15,14 @@
         <td>{{ item.name }}</td>
         <td>{{ item.address }}</td>
         <td>{{ item.contact }}</td>
-        <td><router-link :to="'/update-restro/' + item.id">Update</router-link></td>
+        <td>
+          <router-link :to="'/update-restro/' + item.id">Update</router-link>
+          <button
+            v-on:click="deleteRestaurants(item.id)"
+            style="width: 40%; background-color: #f54522; margin-left: 15px">
+            Delete
+          </button>
+        </td>
       </tr>
     </table>
   </div>
@@ -25,6 +32,7 @@
 import axios from "axios";
 import HeaderPage from "./HeaderPage.vue";
 export default {
+  name: "HomePage",
   components: {
     HeaderPage,
   },
@@ -34,15 +42,27 @@ export default {
       restaurants: [],
     };
   },
-  name: "HomePage",
-  async mounted() {
-    let user = localStorage.getItem("user-info");
-    this.name = JSON.parse(user).name;
-    if (!user) {
-      this.$router.push({ name: "SignUp" });
-    }
-    let result = await axios.get("http://localhost:3000/restaurants");
-    this.restaurants = result.data;
+  methods: {
+    async deleteRestaurants(id) {
+      let result = await axios.delete(
+        "http://localhost:3000/restaurants/" + id
+      );
+      if (result.status == 200) {
+        this.loadData();
+      }
+    },
+    async loadData() {
+      let user = localStorage.getItem("user-info");
+      this.name = JSON.parse(user).name;
+      if (!user) {
+        this.$router.push({ name: "SignUp" });
+      }
+      let result = await axios.get("http://localhost:3000/restaurants");
+      this.restaurants = result.data;
+    },
+  },
+  mounted() {
+    this.loadData();
   },
 };
 </script>
